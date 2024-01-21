@@ -10,8 +10,8 @@ const { AboutMe, ContactMe, NotFound, Portfolio, Resume } = Pages;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
      <React.StrictMode>
-          <Router>
-               <ErrorBoundary>
+          <ErrorBoundary>
+               <Router>
                     <Routes>
                          <Route path="/" element={<App />}>
                               <Route index element={<AboutMe />} />
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                               <Route path="*" element={<NotFound />} />
                          </Route>
                     </Routes>
-               </ErrorBoundary>
-          </Router>
+               </Router>
+          </ErrorBoundary>
      </React.StrictMode>
 );
