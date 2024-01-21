@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet } from "react-router-dom";
+import Header from "./components/UI/Header/Header.jsx";
+import Nav from "./components/UI/Header/Navigation/Navigation.jsx";
+import Footer from "./components/UI/Footer/Footer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-{/* // TODO: Return the */}
-    </>
-  )
+     return (
+          <>
+               <Header>
+                    <Nav />
+               </Header>
+               <Outlet />
+               <Footer />
+          </>
+     );
 }
 
-export default App
+export default App;
