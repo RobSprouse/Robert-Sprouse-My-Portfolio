@@ -2,6 +2,8 @@ $enable-gradients: true;
 $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
+$primary: #609ccd;
+$body-bg: #EBEBF0;
 // Import Bootstrap's SCSS
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -14,13 +16,12 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 // }
 
 @include color-mode(light) {
-     --bs-body-color: #212529;
-     --bs-body-bg: #3c8326;
+     --bs-body-color: #435382;
      // Define more variables as needed
 }
 
 @include color-mode(dark) {
-     --bs-body-color: #13a751;
-     --bs-body-bg: #b9ae10;
+     --bs-body-color: #EBEBF0;
+     --bs-body-bg: #1A1B26;
      // Define more variables as needed
 }

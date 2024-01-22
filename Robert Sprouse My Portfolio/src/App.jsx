@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/UI/Header/Header.jsx";
 import Footer from "./components/UI/Footer/Footer.jsx";
 
-
 function App() {
      const [darkMode, setDarkMode] = useState(() => {
           if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -24,6 +23,15 @@ function App() {
                html.setAttribute("data-bs-theme", "light");
           }
      }, [darkMode]);
+
+     // useEffect(() => {
+     //      document.body.classList.add(".container");
+
+     //      // Cleanup function to remove the class
+     //      return () => {
+     //           document.body.classList.remove(".container");
+     //      };
+     // }, []);
 
      return (
           <>

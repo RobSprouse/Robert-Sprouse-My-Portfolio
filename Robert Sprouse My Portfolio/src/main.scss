@@ -3,7 +3,7 @@
 
 // COMMENT: outline everything for debugging
 * {
-     outline: 1px solid red;
+     outline: 1px solid rgba(0, 140, 255, 0.384);
 }
 
 html,
@@ -15,5 +15,10 @@ body {
      line-height: 1.5;
      font-weight: 400;
      font-size: 16px;
-     padding: 1%; // for debugging
+     margin: 5% 5%;
+     // padding: 1%; // for debugging
+}
+
+body {
+     height: 90vh;
 }
