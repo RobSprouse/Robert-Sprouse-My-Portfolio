@@ -3,22 +3,32 @@
 
 // COMMENT: outline everything for debugging
 * {
-     outline: 1px solid rgba(0, 140, 255, 0.384);
+     outline: 1px dashed rgba(0, 140, 255, 0.212);
 }
 
-html,
 body {
      font-synthesis: none;
      text-rendering: optimizeLegibility;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
-     line-height: 1.5;
-     font-weight: 400;
-     font-size: 16px;
+     // line-height: 1.5;
+     // font-weight: 400;
+     // font-size: 16px;
+     height: 90vh;
      margin: 5% 5%;
      // padding: 1%; // for debugging
 }
 
-body {
-     height: 90vh;
+
+img {
+     padding: 0;
+}
+
+
+// header h1 {
+//      font-size: 3rem;
+// }
+
+#themeSwitch {
+     cursor: pointer;
 }

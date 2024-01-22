@@ -1,29 +1,34 @@
-import { Button } from "react-bootstrap";
+import { Button, Placeholder } from "react-bootstrap";
 import "./header.scss";
 import Nav from "./Navigation/Navigation";
 import { Form } from "react-bootstrap";
-import { PiSunFill } from "../../../../node_modules/react-icons/pi";
+import { IoSunnyOutline } from "react-icons/io5";
+
+import { IoIosMoon } from "react-icons/io";
 
 function Header({ toggleDarkMode }) {
      return (
           <>
-               <header className="d-flex row container mx-auto">
-                    <div className="row g-0">
-                         <h1 className="col-9 d-flex align-self-end">Robert Sprouse</h1>
-                         <div className="col-3 d-flex align-items-center justify-content-end p-2">
-                              <PiSunFill className="col-1 justify-content-end" />
+               <header className="d-flex row container-fluid mx-auto">
+                    <div className="d-flex flex-row justify-content-between">
+                         {/* <img src="https://via.placeholder.com/150" alt="placeholder" className="col-auto" /> */}
+                         <h1 className="flex-fill h-100">Robert Sprouse</h1>
+                         <div className="d-flex align-items-center">
+                              <IoSunnyOutline className="" size={24} />
                               <Form.Check
-                                   className="col-1 d-flex align-items-start justify-content-center m-1"
+                                   className="d-flex justify-content-center m-1"
                                    type="switch"
-                                   id="custom-switch"
+                                   id="themeSwitch"
                                    label=""
                                    onChange={toggleDarkMode}
                                    defaultChecked
                               />
-                              <PiSunFill className="col-1 justify-content-start" />
+                              <IoIosMoon className="" size={24} />
                          </div>
                     </div>
-
+                    <h5 className="">
+                         <em className="">Full Stack Web Developer</em>
+                    </h5>
                     <Nav />
                </header>
           </>

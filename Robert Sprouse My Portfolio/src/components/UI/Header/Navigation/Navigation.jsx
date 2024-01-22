@@ -2,10 +2,10 @@ import "./navigation.scss";
 
 function Navigation() {
      return (
-          <nav>
-               <h1>Navigation</h1>
-          </nav>
+         <nav className="mt-2">
+             <p>Navigation</p>
+         </nav>
      );
-}
+ }
 
 export default Navigation;
