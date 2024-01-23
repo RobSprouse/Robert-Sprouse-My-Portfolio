@@ -6,7 +6,7 @@ import { IoSunnyOutline } from "react-icons/io5";
 
 import { IoIosMoon } from "react-icons/io";
 
-function Header({ toggleDarkMode }) {
+function Header({ isDarkModeEnabled, toggleDarkMode }) {
      return (
           <>
                <header className="d-flex row container-fluid mx-auto">
@@ -14,7 +14,10 @@ function Header({ toggleDarkMode }) {
                          {/* <img src="https://via.placeholder.com/150" alt="placeholder" className="col-auto" /> */}
                          <h1 className="flex-fill h-100">Robert Sprouse</h1>
                          <div className="d-flex align-items-center">
-                              <IoSunnyOutline className="" size={24} />
+                              <IoSunnyOutline
+                                   className={isDarkModeEnabled ? "" : "gradientHighlightFromCenter"}
+                                   size={24}
+                              />
                               <Form.Check
                                    className="d-flex justify-content-center m-1"
                                    type="switch"
@@ -26,7 +29,7 @@ function Header({ toggleDarkMode }) {
                               <IoIosMoon className="" size={24} />
                          </div>
                     </div>
-                    <h5 className="">
+                    <h5 className="padding-left-heading">
                          <em className="">Full Stack Web Developer</em>
                     </h5>
                     <Nav />

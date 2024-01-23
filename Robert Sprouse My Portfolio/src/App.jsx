@@ -5,13 +5,9 @@ import Footer from "./components/UI/Footer/Footer.jsx";
 
 function App() {
      const [darkMode, setDarkMode] = useState(() => {
-          if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-               return true;
-          } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
-               return false;
-          } else {
-               return true;
-          }
+          const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+          return prefersDark || !prefersLight;
      });
 
      useEffect(() => {
@@ -24,18 +20,9 @@ function App() {
           }
      }, [darkMode]);
 
-     // useEffect(() => {
-     //      document.body.classList.add(".container");
-
-     //      // Cleanup function to remove the class
-     //      return () => {
-     //           document.body.classList.remove(".container");
-     //      };
-     // }, []);
-
      return (
           <>
-               <Header toggleDarkMode={() => setDarkMode(!darkMode)} />
+               <Header isDarkModeEnabled={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
 
                <main>
                     <Outlet />
