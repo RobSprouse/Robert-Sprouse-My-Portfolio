@@ -4,9 +4,9 @@ import { useAccordionButton } from "react-bootstrap/AccordionButton";
 
 const Project = (props) => {
      const styles = {
-          div: "d-flex flex-column align-items-center justify-content-start m-3",
+          div: "d-flex flex-column align-items-center justify-content-start m-4 imgContainer",
           imgDiv: "position-relative",
-          img: " border rounded-5",
+          img: " border rounded-5 img-thumbnail ",
           title: "projectTitle",
      };
 
