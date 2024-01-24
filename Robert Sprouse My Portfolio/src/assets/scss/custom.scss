@@ -1,15 +1,15 @@
 $enable-gradients: true;
 $enable-shadows: true;
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
-$primary: #516dc9;
-$body-bg: #ebebf0;
+$primary: #8194d3;
+$btn-primary-color: #ebebf0;
 
-$nav-pills-link-active-bg: #516dc9;
+$nav-pills-link-active-bg: #8194d3;
+$nav-pills-link-active-color: #ebebf0;
 $nav-pills-border-radius: 1rem;
 
 // Import Bootstrap's SCSS
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @include color-mode(light) {
      --bs-body-color: #435382;

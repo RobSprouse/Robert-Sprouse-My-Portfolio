@@ -1,23 +1,39 @@
 import "./project.scss";
-import { Card } from "react-bootstrap";
+import Accordion from "react-bootstrap/Accordion";
+import { useAccordionButton } from "react-bootstrap/AccordionButton";
 
 const Project = (props) => {
      const styles = {
-          section: "d-flex flex-column align-items-center",
+          div: "d-flex flex-column align-items-center justify-content-start m-4 imgContainer",
+          imgDiv: "position-relative",
+          img: " border rounded-5 img-thumbnail ",
+          title: "projectTitle",
      };
 
+     function ProjectToggle({ children, eventKey }) {
+          const expandDetails = useAccordionButton(eventKey, () => {});
+
+          return (
+               <div onClick={expandDetails} className={styles.imgDiv}>
+                    <img src={props.image} alt="Project Image" className={styles.img} />
+                    <p className={styles.title}>{props.title}</p>
+               </div>
+          );
+     }
+
      return (
-          <section className={styles.section}>
-               <Card>
-                    <Card.Img variant="top" src={props.image} />
-                    <Card.Footer>
-                         <h5>{props.title}</h5>
-                         <p>{props.description}</p>
-                         <p>{props.github}</p>
-                         <p>{props.deployed}</p>
-                    </Card.Footer>
-               </Card>
-          </section>
+          <div className={styles.div}>
+               <Accordion>
+                    <ProjectToggle eventKey="0"></ProjectToggle>
+                    <Accordion.Collapse eventKey="0">
+                         <>
+                              <p>{props.description}</p>
+                              <a href={props.github}>GitHub</a>
+                              <a href={props.deployed}>Deployed</a>
+                         </>
+                    </Accordion.Collapse>
+               </Accordion>
+          </div>
      );
 };
 

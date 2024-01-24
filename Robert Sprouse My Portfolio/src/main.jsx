@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./main.scss";
 import App from "./App.jsx";
 import Pages from "./components/pages/index.jsx";
 import ErrorBoundary from "./components/UI/ErrorBoundary/ErrorBoundary.jsx";
+import "./main.scss";
 
 const { AboutMe, ContactMe, NotFound, Portfolio, Resume } = Pages;
 
