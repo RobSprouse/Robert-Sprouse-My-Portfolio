@@ -1,17 +1,25 @@
 @import "../node_modules/normalize.css/normalize.css";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./assets/scss/custom.scss";
 
-:root {
-     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-     line-height: 1.5;
-     font-weight: 400;
+// COMMENT: outline everything for debugging
+* {
+     outline: 1px dashed rgba(0, 140, 255, 0.212);
+}
 
-     color-scheme: light dark;
-     color: rgba(255, 255, 255, 0.87);
-     background-color: #242424;
-
+body {
      font-synthesis: none;
      text-rendering: optimizeLegibility;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
+     // line-height: 1.5;
+     // font-weight: 400;
+     // font-size: 16px;
+     height: 90vh;
+     margin: 5%;
+
+}
+
+main {
+
+     padding: 0% 10% 0% 10%;
 }

@@ -1,4 +1,4 @@
-// COMMENT: Used Github co-pilot to help with this code.
+// COMMENT: Used Github co-pilot to generate an error boundary component that displays a message if an error occurs in the app.
 import React from "react";
 
 class ErrorBoundary extends React.Component {

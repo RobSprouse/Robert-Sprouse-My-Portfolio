@@ -1,7 +1,7 @@
-import "./contact.scss";
+import "./contactForm.scss";
 
-function Contact() {
+function ContactForm() {
      return <h1>Contact Form</h1>;
 }
 
-export default Contact;
+export default ContactForm;
