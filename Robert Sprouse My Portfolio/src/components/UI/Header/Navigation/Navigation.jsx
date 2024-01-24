@@ -1,13 +1,16 @@
 import Nav from "react-bootstrap/Nav";
 import "./navigation.scss";
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
 function Navigation() {
      const location = useLocation();
 
+     const styles = {
+          nav: "d-flex mb-4 justify-content-center",
+     };
+
      return (
-          <Nav className="d-flex mb-4 justify-content-center" variant="pills" activeKey={location.pathname} >
+          <Nav className={styles.nav} variant="pills" activeKey={location.pathname}>
                <Nav.Item>
                     <Nav.Link as={Link} to="/" eventKey="/">
                          Home
@@ -25,7 +28,6 @@ function Navigation() {
                <Nav.Link as={Link} to="/contactme" eventKey="/contactme">
                     Contact Me
                </Nav.Link>
-
           </Nav>
      );
 }
