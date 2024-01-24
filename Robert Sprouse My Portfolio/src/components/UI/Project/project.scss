@@ -1,0 +1,16 @@
+.projectTitle {
+     display: inline-flex;
+     justify-content: center;
+     position: absolute;
+     display: flex;
+     border: 2px solid #000;
+     border-radius: 50px 50px 0px 0px;
+     color: #b6c7ff;
+     background: rgba(0, 0, 0, 0.397);
+     padding-top: 5px;
+     transform: translateX(0%) translateY(-615%);
+     font-size: 1em; /* Increase the font size*/
+     font-weight: bold; /* Make the text bold*/
+     width: 100%;
+     text-align: center;
+}
