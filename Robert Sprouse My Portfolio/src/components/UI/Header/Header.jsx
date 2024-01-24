@@ -5,7 +5,7 @@ import { CiCloudMoon } from "react-icons/ci";
 
 const Header = ({ isDarkModeEnabled, toggleDarkMode }) => {
      const styles = {
-          header: "d-flex row container-fluid mx-auto",
+          header: "d-flex row container-fluid mx-auto mb-4",
           div: "d-flex flex-row justify-content-between",
           h1: "flex-fill",
           themeButton: "themeButton d-flex",
