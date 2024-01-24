@@ -35,6 +35,16 @@ img {
      padding-left: 4rem; // Adjust this value as needed
 }
 
-.gradientHighlightFromCenter {
-     background: radial-gradient(circle, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+.lightModeHighlight {
+     background: radial-gradient(circle, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 255, 0) 60%);
 }
+.darkModeHighlight {
+     background: radial-gradient(circle, rgb(143, 53, 245) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.themeButton {
+     border: 2px solid currentColor;
+     border-radius: 10px;
+     max-height: 32px;
+}
+

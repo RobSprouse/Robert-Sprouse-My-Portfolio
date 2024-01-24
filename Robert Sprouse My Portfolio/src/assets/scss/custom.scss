@@ -2,18 +2,14 @@ $enable-gradients: true;
 $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
-$primary: #609ccd;
-$body-bg: #EBEBF0;
+$primary: #516dc9;
+$body-bg: #ebebf0;
+
+$nav-pills-link-active-bg: #516dc9;
+$nav-pills-border-radius: 2rem;
+
 // Import Bootstrap's SCSS
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-// $color-mode-type: data-bs-theme;
-
-// @mixin color-mode($mode) {
-//      [data-bs-theme="#{$mode}"] {
-//           @content;
-//      }
-// }
 
 @include color-mode(light) {
      --bs-body-color: #435382;
@@ -21,7 +17,7 @@ $body-bg: #EBEBF0;
 }
 
 @include color-mode(dark) {
-     --bs-body-color: #EBEBF0;
-     --bs-body-bg: #1A1B26;
+     --bs-body-color: #ebebf0;
+     --bs-body-bg: #1a1b26;
      // Define more variables as needed
 }
