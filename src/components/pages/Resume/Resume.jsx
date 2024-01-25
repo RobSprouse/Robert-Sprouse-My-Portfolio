@@ -5,9 +5,10 @@ function Resume() {
      const styles = {
           section: "d-flex flex-column justify-content-center mx-auto text-center",
           a: "m-2",
+          iconDiv: "d-flex justify-content-around m-3",
+          textDiv: "text-center",
+          proficienciesDiv: "d-flex align-items-center mr-1",
      };
-
-
 
      return (
           <section className={styles.section}>
@@ -15,9 +16,9 @@ function Resume() {
                     <Row>
                          {proficiencies.map((proficiency, index) => (
                               <Col key={index} md={6}>
-                                   <div className="d-flex align-items-center mr-1">
-                                        <div className="d-flex justify-content-around m-3">{proficiency.icon}</div>
-                                        <div className="text-center">
+                                   <div className={styles.proficienciesDiv}>
+                                        <div className={styles.iconDiv}>{proficiency.icon}</div>
+                                        <div className={styles.textDiv}>
                                              <h5>{proficiency.name}</h5>
                                              <p>{proficiency.description}</p>
                                         </div>
