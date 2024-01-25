@@ -5,8 +5,8 @@ import projects from "../../../assets/projects.js";
 function Portfolio() {
      const styles = {
           section: "d-flex flex-column align-items-center",
-          projects: "d-flex flex-row flex-wrap justify-content-around",
-          h4: "mb-4",
+          projects: "d-flex flex-row flex-wrap justify-content-around ",
+          h4: "display-5 mb-5",
      };
 
      return (

@@ -46,7 +46,7 @@ const projects = [
      {
           title: "My Calendar App",
           image: myCalendarApp,
-          description: "A simple calendar app",
+          description: "A simple calendar app for scheudling your work day.",
           github: "https://github.com/RobSprouse/M5-Challenge-My-Calendar-App",
           deployed: "https://robsprouse.github.io/M5-Challenge-My-Calendar-App/",
      },

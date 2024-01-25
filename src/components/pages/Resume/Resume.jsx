@@ -9,7 +9,8 @@ function Resume() {
           iconDiv: "d-flex justify-content-around m-3",
           textDiv: "text-center",
           proficienciesDiv: "d-flex align-items-center justify-content-center mr-1",
-          container: "mt-4",
+          container: "mt-5",
+          title: "display-5 mb-5",
      };
 
      return (
@@ -24,6 +25,7 @@ function Resume() {
                </a>
 
                <Container className={styles.container}>
+                    <h1 className={styles.title}>Proficiencies</h1>
                     <Row>
                          {proficiencies.map((proficiency, index) => (
                               <Col key={index} md={6}>
