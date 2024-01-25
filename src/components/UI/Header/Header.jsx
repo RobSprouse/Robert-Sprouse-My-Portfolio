@@ -11,7 +11,8 @@ const Header = ({ isDarkModeEnabled, toggleDarkMode }) => {
           themeButton: "themeButton d-flex",
           sunIcon: isDarkModeEnabled ? "pt-1 " : "pt-1 lightModeHighlight",
           moonIcon: !isDarkModeEnabled ? "pt-1 " : "pt-1 darkModeHighlight",
-          h5: "padding-left-heading mb-4",
+          h5: "margin-left-heading mb-4",
+          important: "important",
      };
 
      return (
@@ -21,12 +22,12 @@ const Header = ({ isDarkModeEnabled, toggleDarkMode }) => {
                          <h1 className={styles.h1}>Robert Sprouse</h1>
                          <div className={styles.themeButton} onClick={toggleDarkMode}>
                               <CiSun className={styles.sunIcon} size={26} />
-                              <p>||</p>
+                              <p className={styles.important}>||</p>
                               <CiCloudMoon className={styles.moonIcon} size={26} />
                          </div>
                     </div>
                     <h5 className={styles.h5}>
-                         <em className="">Full Stack Web Developer</em>
+                         <em>Full Stack Web Developer</em>
                     </h5>
 
                     <Nav />
