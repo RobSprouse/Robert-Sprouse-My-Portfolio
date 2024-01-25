@@ -25,6 +25,13 @@ main {
 .text-underline {
      text-decoration: underline;
 }
+
+@media screen and (min-width: 1440px) {
+     body {
+          margin: 2% 18% 5% 18%;
+     }
+}
+
 @media screen and (max-width: 500px) {
      * {
           font-size: 0.805rem;

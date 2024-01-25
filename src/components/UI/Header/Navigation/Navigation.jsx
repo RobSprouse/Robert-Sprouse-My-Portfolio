@@ -13,7 +13,7 @@ function Navigation() {
           <Nav className={styles.nav} variant="pills" activeKey={location.pathname}>
                <Nav.Item>
                     <Nav.Link as={Link} to="/" eventKey="/">
-                         Home
+                         About Me
                     </Nav.Link>
                </Nav.Item>
 
