@@ -39,14 +39,15 @@ const projects = [
      {
           title: "Rob's First Portfolio",
           image: robsPortfolio,
-          description: "My first portfolio using HTML and CSS",
+          description: "My first portfolio using HTML and CSS, learning how to effectively use flexbox.",
           github: "https://github.com/RobSprouse/M2-Challenge-Advanced-CSS-Flexbox-Portfolio",
           deployed: "https://robsprouse.github.io/M2-Challenge-Advanced-CSS-Flexbox-Portfolio/",
      },
      {
           title: "My Calendar App",
           image: myCalendarApp,
-          description: "A simple calendar app for scheudling your work day.",
+          description:
+               "A simple calendar app for scheduling your work day, utlizing local storage to save your events.",
           github: "https://github.com/RobSprouse/M5-Challenge-My-Calendar-App",
           deployed: "https://robsprouse.github.io/M5-Challenge-My-Calendar-App/",
      },
