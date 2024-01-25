@@ -9,7 +9,11 @@ function ContactForm() {
      const { Formik } = formik;
 
      const schema = yup.object().shape({
-          name: yup.string().min(2, "Name must be at least 2 characters").max(50, "Name must be at most 50 characters"),
+          name: yup
+               .string()
+               .required("This field is required")
+               .min(2, "Name must be at least 2 characters")
+               .max(50, "Name must be at most 50 characters"),
           email: yup.string().required("This field is required").email("Invalid email address"),
           message: yup
                .string()
