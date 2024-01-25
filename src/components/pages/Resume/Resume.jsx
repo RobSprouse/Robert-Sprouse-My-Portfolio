@@ -1,5 +1,6 @@
 import proficiencies from "../../../assets/proficiencies.jsx";
 import { Container, Row, Col } from "react-bootstrap";
+import { FaGoogleDrive } from "react-icons/fa";
 
 function Resume() {
      const styles = {
@@ -8,11 +9,21 @@ function Resume() {
           iconDiv: "d-flex justify-content-around m-3",
           textDiv: "text-center",
           proficienciesDiv: "d-flex align-items-center justify-content-center mr-1",
+          container: "mt-4",
      };
 
      return (
           <section className={styles.section}>
-               <Container>
+               <a
+                    href="https://docs.google.com/document/d/1PJqbYeXZvpqSP8J_XM1TLBhNHIF-keub/edit?usp=drive_link&ouid=117059958261249643585&rtpof=true&sd=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+               >
+                    <FaGoogleDrive size="2em" className={styles.a} />
+                    Resume - View on Google Drive
+               </a>
+
+               <Container className={styles.container}>
                     <Row>
                          {proficiencies.map((proficiency, index) => (
                               <Col key={index} md={6}>
