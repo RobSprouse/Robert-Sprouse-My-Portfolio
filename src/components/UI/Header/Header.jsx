@@ -1,9 +1,12 @@
+// COMMENT: importing required modules
 import "./header.scss";
 import Nav from "./Navigation/Navigation";
 import { CiSun } from "react-icons/ci";
 import { CiCloudMoon } from "react-icons/ci";
 
+// COMMENT: Header component
 const Header = ({ isDarkModeEnabled, toggleDarkMode }) => {
+     // COMMENT: styles object
      const styles = {
           header: "d-flex row container-fluid mx-auto mb-4",
           div: "d-flex flex-row justify-content-between",
@@ -15,6 +18,7 @@ const Header = ({ isDarkModeEnabled, toggleDarkMode }) => {
           important: "important",
      };
 
+     // COMMENT: Header component return that contains my name, title, and navigation bar, and the light/dark toggle button
      return (
           <>
                <header className={styles.header}>
@@ -36,4 +40,5 @@ const Header = ({ isDarkModeEnabled, toggleDarkMode }) => {
      );
 };
 
+// COMMENT: export Header component
 export default Header;

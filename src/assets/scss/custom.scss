@@ -1,4 +1,4 @@
-$enable-gradients: true;
+// COMMENT: This file is used to override Bootstrap's default variables and add custom variables for the project.
 $enable-shadows: true;
 
 $primary: #8194d3;
@@ -9,13 +9,15 @@ $nav-pills-link-active-color: #ebebf0;
 $nav-pills-border-radius: 1rem;
 
 // Import Bootstrap's SCSS
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss"; // Bootstrap's SCSS
 
+// COMMENT: light mode variables
 @include color-mode(light) {
      --bs-body-color: #435382;
      // Define more variables as needed
 }
 
+// COMMENT: dark mode variables
 @include color-mode(dark) {
      --bs-body-color: #ebebf0;
      --bs-body-bg: #1a1b26;

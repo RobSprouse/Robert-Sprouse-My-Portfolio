@@ -27,4 +27,5 @@ class ErrorBoundary extends React.Component {
      }
 }
 
+// COMMENT: export ErrorBoundary component
 export default ErrorBoundary;

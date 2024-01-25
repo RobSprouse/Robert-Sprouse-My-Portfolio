@@ -1,6 +1,8 @@
+// COMMENT: import required icons from react-icons
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiMysql, SiMongodb, SiExpress, SiHeroku } from "react-icons/si";
 
+// COMMENT: create array of objects containing proficiency name, icon, and description
 const proficiencies = [
      { name: "HTML", icon: <FaHtml5 size="2em" />, description: "Markup language for creating web pages." },
      {
@@ -57,4 +59,5 @@ const proficiencies = [
      },
 ];
 
+// COMMENT: export proficiencies array
 export default proficiencies;

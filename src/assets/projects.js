@@ -1,3 +1,4 @@
+// COMMENT: required for the project images to be imported into the project page
 import farmersMarket from "./projectImgs/farmersmarket-6a75e85eecc8.herokuapp.com_.png";
 import gamingHolidays from "./projectImgs/robsprouse.github.io_Gaming-Holidays_.png";
 import robsBlog from "./projectImgs/robs-blog-b0de7b1ff25d.herokuapp.com_blogs_9.png";
@@ -5,6 +6,7 @@ import robsQuickNotes from "./projectImgs/robs-quick-notes-4729aed654b4.herokuap
 import robsPortfolio from "./projectImgs/robsprouse.github.io_M2-Challenge-Advanced-CSS-Flexbox-Portfolio_.png";
 import myCalendarApp from "./projectImgs/robsprouse.github.io_M5-Challenge-My-Calendar-App_.png";
 
+// COMMENT: this is the array of objects that will be used to populate the project page
 const projects = [
      {
           title: "Farmers Market",
@@ -53,4 +55,5 @@ const projects = [
      },
 ];
 
+// COMMENT: this exports the array of objects to be used in the project page
 export default projects;

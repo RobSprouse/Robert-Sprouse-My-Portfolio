@@ -1,7 +1,10 @@
+// COMMENT: importing required modules
 import "./AboutMe.scss";
 import profilePic from "../../../assets/abouteMe/200x200.jpg";
 
+// COMMENT: AboutMe component
 function AboutMe() {
+     // COMMENT: styles object
      const styles = {
           section: "d-flex flex-column align-items-center",
           img: "mb-3 profilePic",
@@ -9,6 +12,7 @@ function AboutMe() {
           p: "justify-text",
      };
 
+     // COMMENT: AboutMe component return
      return (
           <section className={styles.section}>
                <img src={profilePic} alt="profile picture" className={styles.img} />
@@ -23,4 +27,5 @@ function AboutMe() {
      );
 }
 
+// COMMENT: export AboutMe component
 export default AboutMe;

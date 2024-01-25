@@ -1,12 +1,16 @@
+// COMMENT: imports required modules
 import { useState } from "react";
 import "./project.scss";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import { FaGithub, FaGlobeAmericas } from "react-icons/fa";
 
+// COMMENT: Project component
 const Project = (props) => {
+     // COMMENT: useState hook to set the state of the accordion
      const [open, setOpen] = useState(false);
 
+     // COMMENT: styles object
      const styles = {
           div: "d-flex flex-column align-items-center justify-content-start m-4 imgContainer",
           imgDiv: "",
@@ -15,10 +19,11 @@ const Project = (props) => {
           accordion: "accordion",
           collapsedDiv: "d-flex flex-row flex-wrap align-items-center justify-content-around",
      };
-
+// COMMENT: function for that returns the part of the code that the accordion will toggle off of
      function ProjectToggle({ children, eventKey }) {
+          // COMMENT: useState hook to set the state of the accordion
           const expandDetails = useAccordionButton(eventKey, () => setOpen(!open));
-
+          // COMMENT: 
           return (
                <div onClick={expandDetails} onMouseEnter={() => setOpen(true)} className={styles.imgDiv}>
                     <img src={props.image} alt="Project Image" className={styles.img} />
@@ -27,6 +32,7 @@ const Project = (props) => {
           );
      }
 
+     // COMMENT: the accordion that will expand and collapse when the user hovers over the returned ProjectToggle component
      return (
           <div className={styles.div}>
                <Accordion
@@ -51,4 +57,5 @@ const Project = (props) => {
      );
 };
 
+// COMMENT: export Project component
 export default Project;

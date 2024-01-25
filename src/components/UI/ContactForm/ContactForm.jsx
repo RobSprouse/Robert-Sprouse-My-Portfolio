@@ -1,3 +1,4 @@
+// COMMENT: Imports required modules
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -5,9 +6,11 @@ import Row from "react-bootstrap/Row";
 import * as formik from "formik";
 import * as yup from "yup";
 
+// COMMENT: ContactForm component
 function ContactForm() {
      const { Formik } = formik;
 
+     // COMMENT: schema object for validation
      const schema = yup.object().shape({
           name: yup
                .string()
@@ -22,6 +25,7 @@ function ContactForm() {
                .max(500, "Message must be at most 500 characters"),
      });
 
+     // COMMENT: ContactForm component return that includes Formik form with validation
      return (
           <Formik
                validationSchema={schema}
@@ -84,4 +88,5 @@ function ContactForm() {
      );
 }
 
+// COMMENT: export ContactForm component
 export default ContactForm;

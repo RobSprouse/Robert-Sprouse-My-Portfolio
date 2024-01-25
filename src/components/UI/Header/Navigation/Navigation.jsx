@@ -1,14 +1,18 @@
+// COMMENT: imports required modules
 import Nav from "react-bootstrap/Nav";
-import "./navigation.scss";
 import { Link, useLocation } from "react-router-dom";
 
+// COMMENT: Navigation component
 function Navigation() {
      const location = useLocation();
 
+
+     // COMMENT: styles object
      const styles = {
           nav: "d-flex mb-4 justify-content-center",
      };
 
+     // COMMENT: Navigation component return that contains links to the AboutMe, Portfolio, Resume, and ContactMe pages
      return (
           <Nav className={styles.nav} variant="pills" activeKey={location.pathname}>
                <Nav.Item>
@@ -32,4 +36,5 @@ function Navigation() {
      );
 }
 
+// COMMENT: export Navigation component
 export default Navigation;

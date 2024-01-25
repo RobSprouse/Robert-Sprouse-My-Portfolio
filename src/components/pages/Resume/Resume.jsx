@@ -1,9 +1,12 @@
+// COMMENT: Imports required modules
 import proficiencies from "../../../assets/proficiencies.jsx";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaDownload } from "react-icons/fa";
 import Resume2024 from "../../../assets/Resume/2023-Resume-for-portfolio.pdf";
 
+// COMMENT: Resume component
 function Resume() {
+     // COMMENT: styles object
      const styles = {
           section: "d-flex flex-column justify-content-center mx-auto text-center",
           a: "m-2",
@@ -14,6 +17,7 @@ function Resume() {
           title: "display-5 mb-5",
      };
 
+     // COMMENT: Resume component return
      return (
           <section className={styles.section}>
                <a href={Resume2024} download target="_blank" rel="noopener noreferrer">
@@ -41,4 +45,5 @@ function Resume() {
      );
 }
 
+// COMMENT: export Resume component
 export default Resume;

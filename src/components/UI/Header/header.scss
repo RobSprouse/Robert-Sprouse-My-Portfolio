@@ -1,3 +1,5 @@
+// COMMENT: css for the theme button and margin for the sub-text
+
 .margin-left-heading {
      margin-left: 9rem; // Adjust this value as needed
 }
@@ -20,6 +22,7 @@
      background: radial-gradient(circle, rgb(143, 53, 245) 0%, rgba(255, 255, 255, 0) 60%);
 }
 
+// COMMENT: keeps the `||` from getting smaller when the text size is reduced for media screens
 .important {
-     font-size: 16px; // Adjust this value as needed
+     font-size: 16px;
 }
