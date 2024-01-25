@@ -7,7 +7,7 @@ function Resume() {
           a: "m-2",
           iconDiv: "d-flex justify-content-around m-3",
           textDiv: "text-center",
-          proficienciesDiv: "d-flex align-items-center mr-1",
+          proficienciesDiv: "d-flex align-items-center justify-content-center mr-1",
      };
 
      return (
